@@ -1,6 +1,6 @@
 {
   "name": "loopback-mongo-gridfs",
-  "version": "1.3.2",
+  "version": "1.0.0",
   "description": "loopback storage mongo gridfs",
   "main": "index.js",
   "repository": {
