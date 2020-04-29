@@ -55,6 +55,27 @@ FileContainer.getContainers();
 ```
 <hr>
 
+
+### Download file
+
+```
+GET /FileContainers/:containerName/download/:filename
+```
+```javascript
+FileContainer.downloadFileByName({
+  containerName: 'containerName',
+  filename: 'filename'
+});
+```
+
+  * **containerName** - name of container
+  * **filename** - name of file
+
+Errors:
+* **404** File not found.
+
+<hr>
+
 ### Remove all files that meet the condition
 
 ```
@@ -133,6 +154,25 @@ FileContainer.getFileByName({
 
   * **containerName** - name of container
   * **filename** - name of file
+
+<hr>
+
+### Get file versions by file name
+
+```
+GET /FileContainers/:containerName/getFileVersions/:filename
+```
+```javascript
+FileContainer.getFileVersions({
+  containerName: 'containerName',
+  filename: 'filename',
+  excludeCurrent: true
+});
+```
+
+  * **containerName** - name of container
+  * **filename** - name of file
+  * **excludeCurrent** - boolean: whether to include current version or not
 
 <hr>
 
