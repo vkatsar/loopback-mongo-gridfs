@@ -1,27 +1,37 @@
 {
   "name": "loopback-mongo-gridfs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "loopback storage mongo gridfs",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/vkatsar/loopback-mongo-gridfs.git"
+    "url": "git+https://github.com/vkatsar/loopback-mongo-gridfs.git"
   },
   "keywords": [
     "loopback",
     "mongodb",
+    "mongo",
     "gridfs"
   ],
+  "homepage": "https://github.com/vkatsar/loopback-mongo-gridfs#readme",
+  "bugs": "https://github.com/vkatsar/loopback-mongo-gridfs/issues",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Vassilis Katsaris",
   "license": "ISC",
+  "contributors": [
+    {
+      "name": "Marios Vertopoulos",
+      "email": "mvertopoulos@gmail.com",
+      "url": "https://github.com/mvertopoulos"
+    }
+  ],
   "dependencies": {
     "busboy": "^0.2.14",
     "gridfs-stream": "^1.1.1",
     "lodash": "^4.17.10",
-    "mongodb": "^3.1.1",
+    "mongodb": "^3.5.8",
     "zip-stream": "^1.2.0"
   }
 }
