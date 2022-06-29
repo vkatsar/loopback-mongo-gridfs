@@ -492,6 +492,25 @@ Model.findOne(where);
 
 <hr>
 
+### Upload a file upload using a file stream
+
+###### API endpoint:
+**None**
+
+###### Node.js:
+```javascript
+Model.fileUpload(container, fileStream, filename, mimetype, customMetadata);
+```
+
+###### Arguments:
+* `container`: (**Required**) Container name
+* `fileStream`: (**Required**) The file's stream
+* `filename`: (**Required**) File name
+* `mimetype`: (**Required**) The file's mimetype
+* `customMetadata`: (*Optional*) Metadata object to be attached to the file
+
+<hr>
+
 ### Delete all files that match the condition
 
 ###### API endpoint:
